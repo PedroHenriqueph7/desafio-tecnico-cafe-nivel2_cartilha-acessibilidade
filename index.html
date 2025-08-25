@@ -11,8 +11,647 @@
 
     <main>
 
+        <h2> Capítulo Um: Introdução</h2>
 
-       <table></table>
+        <p>Objetivos: explicar de forma simples o que é acessibilidade na web, mostrar as principais barreiras
+            enfrentadas por usuários, indicar recomendações e diretrizes para desenvolvedores, orientar sobre avaliação
+            de acessibilidade em sites e informar como cidadãos podem cobrar essa acessibilidade.</p>
+
+        <p>Licença de Uso: o material está sob a licença Creative Commons BY-NC 3.0 BR, permitindo cópia e distribuição
+            não comercial, desde que sejam dados os devidos créditos, sem afetar direitos autorais, morais ou de imagem.
+        </p>
+
+        <p>Público-alvo: qualquer pessoa interessada no tema, incluindo cidadãos, gestores, desenvolvedores, designers,
+            testadores, advogados, promotores e auditores.</p>
+
+        <p>Fascículos: a cartilha está dividida em partes que tratam de aspectos variados da acessibilidade na web, indo
+            do básico ao técnico, com temas como legislação, público-alvo, boas práticas, manutenção, mensuração de
+            resultados e referências.</p>
+
+        <p>Contribuição: qualquer pessoa pode sugerir correções, exemplos e melhorias ao GT de Acessibilidade no Web do
+            W3C Brasil.</p>
+
+        <p>Siglas: são listadas algumas usadas ao longo do material, como AACD, ABNT, ONU, WAI e W3C.</p>
+
+        <hr>
+
+        <h2> Capítulo Dois </h2>
+
+        <p>Internet e Web</p>
+        <ul>
+            <li>A Internet é uma rede mundial de computadores interligados.</li>
+            <li>A Web (WWW), criada em 1991 por Tim Berners-Lee, é um dos serviços da Internet, usada para informação,
+                educação, comércio, saúde, serviços públicos, etc.</li>
+            <li>A Web evoluiu de um espaço de leitura estática para um ambiente dinâmico e interativo, com hipertextos
+                ligados por hiperlinks, organizados em sites e acessados via HTML e HTTP.</li>
+        </ul>
+
+        <p>Acessibilidade (em geral):</p>
+        <ul>
+            <li>Decreto 5.296/2004: uso com segurança e autonomia por pessoas com deficiência ou mobilidade reduzida
+                (mas com linguagem limitada).</li>
+            <li>Convenção da ONU (2007): igualdade de oportunidades, vida independente e participação plena.</li>
+            <li>ABNT NBR 9050/2004: destaca alcance, percepção e entendimento.</li>
+            <li>Definição adotada: possibilidade de usar com segurança, autonomia e igualdade de oportunidades espaços,
+                serviços, transportes, informação e comunicação (inclusive sistemas digitais).</li>
+        </ul>
+
+        <p>Acessibilidade na Web:</p>
+        <ul>
+            <li>Permite que pessoas com deficiência percebam, entendam, naveguem, interajam e contribuam na web.</li>
+            <li>Beneficia também idosos, pessoas em áreas rurais ou em países em desenvolvimento.</li>
+            <li>Importância: a web é essencial na vida cotidiana (educação, trabalho, saúde, serviços, comunicação).
+            </li>
+            <li>Reciprocidade: acessibilidade não é só receber, mas também permitir que todos contribuam com a web.</li>
+            <li>Fatores envolvidos (W3C-WAI)</li>
+            <ol>
+                <li> Conteúdo (texto, imagem, áudio, código). </li>
+                <li> Navegadores e players. </li>
+                <li> Tecnologias assistivas (ex.: leitores de tela). </li>
+                <li> Conhecimento e estratégias do usuário. </li>
+                <li> Desenvolvedores e criadores de conteúdo. </li>
+                <li> Ferramentas de autoria (para criar sites). </li>
+                <li> Ferramentas de avaliação (validadores, testes de acessibilidade). </li>
+            </ol>
+            <li>Definição prática: “Garantir acessibilidade na web é permitir que qualquer pessoa, em qualquer
+                tecnologia de navegação, use qualquer site com entendimento e interação plenos.”</li>
+        </ul>
+
+        <p>Desenho Universal:</p>
+        <ul>
+            <li> Conceito: projetar ambientes e produtos para todas as pessoas, sem necessidade de adaptação. </li>
+            <li> Exemplos: rampas, banheiros adaptados, legendas, audiodescrição.</li>
+            <li> Princípios:</li>
+            <ol>
+                <li>Uso equivalente. </li>
+                <li>Flexibilidade.</li>
+                <li>Simples e intuitivo.</li>
+                <li>Informação perceptível.</li>
+                <li>Tolerância ao erro.</li>
+                <li>Mínimo esforço físico.</li>
+                <li>Espaço adequado para uso.</li>
+            </ol>
+            <li>Aplicado à web: sites devem seguir padrões e ser compatíveis com diferentes dispositivos e tecnologias
+                assistivas, evitando barreiras de acesso.</li>
+        </ul>
+
+        <hr>
+
+        <h3>Capítulo Três: Quem são os beneficiados com uma web acessível?</h3>
+
+        <ul>
+            <li>Beneficiados diretos: pessoas com deficiência (visual, auditiva, motora, intelectual, múltipla).</li>
+            <ul>
+                <li>Cego usando leitor de telas para consultar imposto de renda.</li>
+                <li>Pessoa sem braços usando reconhecimento de voz.</li>
+                <li>Tetraplégica navegando com ponteiro na cabeça.</li>
+                <li>Surdocego namorando pela web com dispositivo em Braille.</li>
+                <li>Pessoa com dislexia e TDAH utilizando software que lê e realça textos.</li>
+            </ul>
+            <li>Princípio central: a acessibilidade na web é essencial para garantir igualdade de acesso e
+                oportunidades, permitindo não apenas consumir, mas também produzir e interagir na sociedade digital.
+            </li>
+            <li>Benefícios indiretos (efeito “porta automática”):</li>
+            <ul>
+                <li>Assim como rampas e portas automáticas ajudam todos no mundo físico, recursos de acessibilidade
+                    digital facilitam a navegação de qualquer usuário.</li>
+                <li>Exemplo: links bem contrastados e claros ajudam pessoas com baixa visão e qualquer pessoa em geral.
+                </li>
+            </ul>
+            <li>Outros contextos que se beneficiam:</li>
+            <ul>
+                <li>Usuários com dificuldades temporárias (ex.: tendinite, braço imobilizado).</li>
+                <li>Pessoas com baixo letramento.</li>
+                <li>Idosos com visão reduzida.</li>
+                <li>Leigos em informática obrigados a usar sistemas digitais.</li>
+                <li>Pessoas em outros idiomas.</li>
+                <li>Crianças em fase de alfabetização.</li>
+                <li>Usuários com telas pequenas, conexões lentas ou navegadores antigos.</li>
+                <li>Robôs de busca (Google, Bing) que dependem de conteúdo acessível e estruturado.</li>
+                <li>Pessoas em movimento (usando celular no trânsito, em táxi, no trabalho, etc.).</li>
+            </ul>
+        </ul>
+
+        <h4>Capítulo Quatro: </h4>
+
+        <ul>
+            <li>O capítulo apresenta uma tabela de referências (artigos, sites e ferramentas) úteis sobre acessibilidade na web.</li>
+            <li>Cada referência é indicada para diferentes perfis de público-alvo da cartilha:</li>
+            <ul>
+                <li>A – Cidadãos interessados em aprender e cobrar acessibilidade de gestores e representantes.</li>
+                <li>B – Procuradores, promotores e auditores que precisam conhecer aspectos legais e técnicos.</li>
+                <li>C – Gestores, administradores e gerentes de projetos, para entender importância, benefícios e ações.</li>
+                <li>D – Desenvolvedores, designers, arquitetos de informação, testadores e provedores de conteúdo, que precisam aplicar diretrizes técnicas e avaliar resultados.</li>
+            </ul>
+        </ul>
+
+
+        <table border="2">
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com) <br>
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Acessibilidade Web: tudo tem sua primeira vez – Parte I <br>
+                    http://acessibilidadelegal.com/13-tudotem.php</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com) <br>
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Introdução à acessibilidade na Web (W3C – tradução Maujor.com)
+                    http://www.maujor.com/w3c/introwac.html</td>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+        </table>
     </main>
 
 
