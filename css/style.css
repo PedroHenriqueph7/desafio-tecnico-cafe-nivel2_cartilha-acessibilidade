@@ -12,51 +12,59 @@ body {
     grid-template-columns: 1fr;
     place-items: center start;
     padding: 10px;
+    position: fixed;
 }
 
 #menu_principal {
-    width: 500px;
+    width: 99vw;
 }
 #menus {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     list-style: none;
+    place-items: center;
+    
 }
 
-#menus li {
+#menus li button{
     color: white;
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
     
 }
 
 #menus li:hover {
-    
+    background-color: #94A8D9;
+    border-radius: 5px;
 }
 #conteudo_principal {
-    padding: 10px;
-
+   
+    padding: 30px;
+    font-size: 1.5em;
     display: grid;
 
     grid-template-columns: 1.5fr 1fr;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
+    align-items: center;
     
     gap: 0 10px;
 }
 .bloco_generico_um{
-    background-color: blue;
-   
+    background-color: transparent;
     height: 250px;
 }
 
 .bloco_generico_dois{
-    background-color: red;
+    background-color: transparent;
     height: 250px;
 
 }
 
 #cabecalho_principal {
-    background-color: #042938;
+    background-color: #082e68;
     height: 90px;
 }
 #cabecalho_primeiro {
@@ -87,15 +95,17 @@ body {
 
 
 #segundo {
-    width: 50vw;
-    padding: 10px;
+    padding: 30px;
+    font-size: 1.3em;
     display: grid;
 
-
+    grid-template-columns: 1fr 1.5fr;
     justify-items: center;
     align-items: center;
-
+    
+    gap: 0 10px;
 }
+
 
 #cabecalho_terceiro {
     width: 99.1vw;
@@ -110,15 +120,16 @@ body {
 }
 
 #terceiro {
-    width: 50vw;
     padding: 10px;
+    font-size: 1.2em;
     display: grid;
 
-
+    grid-template-columns: 1.5fr 1fr;
     justify-items: center;
     align-items: center;
+    
+    gap: 0 10px;
 }
-
 #cabecalho_quatro {
     width: 99.1vw;
     background-color: #94A8D9;
@@ -132,19 +143,26 @@ body {
 }
 
 #quatro {
-    width: 50vw;
-    padding: 50px;
+    padding: 30px;
+    font-size: 1.3em;
     display: grid;
 
-
+    grid-template-columns: 1.5fr 1fr;
     justify-items: center;
     align-items: center;
+    
+    gap: 0 10px;
 }
 
 #tabela {
     border: 1px solid #c3e2f5;
     background-color: #e5f2fa;
     border-collapse: collapse;
+
+    display: grid;
+
+    justify-content: center;
+    align-content: center;
 }
 
 #tabela tr,
@@ -159,4 +177,8 @@ td {
 
 .perfis {
     color: #387b96;
+}
+
+@media (max-width: 600px) {
+    
 }
