@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#cabecalho{
+    background-color: #93BDD9;
+    height: 50px;
+    padding: 10px;
+
+    display: grid;
+
+    justify-content: center;
+    color: white
+}
+
+#conteudo_principal{
+    background-color: #94A8D9;
+    padding: 10px;  
+
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+#conteudo_principal p{
+    
+}
+
+#segundo{
+    background-color: #94A8D9;
+}
+
+#terceiro{
+
+}
+
+#quarto{
+
+}
+
+#tabela{
+
+}
